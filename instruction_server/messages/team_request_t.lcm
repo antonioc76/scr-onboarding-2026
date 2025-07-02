@@ -1,0 +1,3 @@
+struct team_request_t {
+    int8_t requestingTeam;
+}

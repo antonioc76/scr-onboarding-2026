@@ -1,0 +1,4 @@
+struct team_response_t {
+    int8_t requestingTeam;
+    int8_t deliverTo;
+}
