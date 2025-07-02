@@ -49,6 +49,8 @@ struct node * createRing(char * buffer, int bufferSize) {
 
     t->next = head;
 
+    free(t);
+
     return head;
 }
 
@@ -56,7 +58,7 @@ int main (int argc, char * argv) {
     struct node * head = malloc(sizeof(struct node));
 
     char buffer[100];
-    
+
     if (readFromFile("teammap.txt", buffer, sizeof(buffer)/sizeof(char)) == "error") {
         return 1;
     }
