@@ -56,8 +56,7 @@ int main (int argc, char * argv) {
     struct node * head = malloc(sizeof(struct node));
 
     char buffer[100];
-    char * token;
-
+    
     if (readFromFile("teammap.txt", buffer, sizeof(buffer)/sizeof(char)) == "error") {
         return 1;
     }
