@@ -110,7 +110,7 @@ int main (int argc, char * argv) {
 
     struct node * head = createRing(buffer, sizeof(buffer)/sizeof(char));
 
-    lcm_t * lcm = lcm_create(NULL);
+    lcm_t * lcm = lcm_create("udpm://239.255.76.67:7667?ttl=1");
 
     if (!lcm) {
         fprintf(stderr, "lcm not initialized properly\n");
